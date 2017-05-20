@@ -2,7 +2,7 @@
 var assert = require('assert')
 
 describe('webdriver.io api page', function() {
-    it.skip('should have the right title', function() {
+    it('should have the right title', function() {
         browser.url('/')
         var title = browser.getTitle()
         assert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js')
@@ -18,7 +18,7 @@ describe('webdriver.io api page', function() {
     	
     })
 
-    it.skip('should take you to the API page', function(){
+    it.only('should take you to the API page', function(){
     	browser.url('/')
     	browser.click('=API')
     	var title = browser.getTitle()
