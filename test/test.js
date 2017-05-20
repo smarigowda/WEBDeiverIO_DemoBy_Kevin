@@ -23,5 +23,6 @@ describe('webdriver.io api page', function() {
     	browser.click('=API')
     	var title = browser.getTitle()
     	assert.equal(title, 'WebdriverIO - API Docs')
+        browser.debug()
     }) 
 })
